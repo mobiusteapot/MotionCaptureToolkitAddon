@@ -823,6 +823,7 @@ def fcurves_simplify(context, obj, options, fcurves):
                 fcurve_sel[fcurve_i].keyframe_points.insert(frame=v[0], value=v[1])
     return
 
+# Adapted from similar approach by Michael Soluyanov, can probably be trimmed down more
 class GRAPH_OT_simplify(Operator):
     bl_idname = "graph.simplify"
     bl_label = "Simplify F-Curves"
